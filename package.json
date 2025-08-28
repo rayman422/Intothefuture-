@@ -1,0 +1,20 @@
+{
+  "name": "intothefuter",
+  "version": "0.1.0",
+  "description": "Full-stack cannabis culture blog with Node/Express and SQLite",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production node src/server.js",
+    "dev": "NODE_ENV=development nodemon --watch src --ext js,json --exec node src/server.js",
+    "seed": "node src/db.js --seed"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
